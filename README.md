@@ -31,7 +31,7 @@ Open `lib/person.rb` and add a class definition for a `Person` class.
 
 #### 5. Define `#talk` in `Person`
 
-Add an instance method `#bark` to your `Person` class in `lib/person.rb` that will puts `"Woof!"`
+Add an instance method `#bark` to your `Person` class in `lib/person.rb` that will puts `"Hello World!"`
 
 #### 6. Define `#walk` in `Person`
 
