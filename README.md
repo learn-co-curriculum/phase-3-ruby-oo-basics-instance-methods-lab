@@ -38,3 +38,5 @@ Add an instance method `#talk` to your `Person` class in `lib/person.rb` that wi
 Add an instance method `#walk` to your `Person` class in `lib/person.rb` that will puts `"The Person is walking"`.
 
 When you're done, submit the lab with `learn submit`.
+
+<a href='https://learn.co/lessons/instance-methods-lab-ruby' data-visibility='hidden'>View this lesson on Learn.co</a>
