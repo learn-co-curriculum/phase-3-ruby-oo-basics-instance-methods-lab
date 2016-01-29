@@ -39,4 +39,4 @@ Add an instance method `#walk` to your `Person` class in `lib/person.rb` that wi
 
 When you're done, submit the lab with `learn submit`.
 
-<a href='https://learn.co/lessons/instance-methods-lab-ruby' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/instance-methods-lab-ruby' title='Instance Methods Lab Ruby'>Instance Methods Lab Ruby</a> on Learn.co and start learning to code for free.</p>
