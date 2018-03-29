@@ -7,6 +7,8 @@
 
 ## Overview
 
+Hey Sam!
+
 You're going to be adding 2 instance methods to a `Dog` and `Person` class.
 
 ## Instructions
