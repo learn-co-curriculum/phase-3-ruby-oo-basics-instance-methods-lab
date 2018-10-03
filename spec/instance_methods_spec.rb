@@ -1,5 +1,5 @@
 describe 'Dog' do
-  it 'is defined within lib/dog.rb' do
+  it 'is defined' do
     expect(defined?(Dog)).to be_truthy
     expect(Dog).to be_a(Class)
   end
@@ -34,7 +34,7 @@ describe 'Dog' do
 end
 
 describe 'Person' do
-  it 'is defined within lib/person.rb' do
+  it 'is defined' do
     expect(defined?(Person)).to be_truthy
     expect(Person).to be_a(Class)
   end
