@@ -47,6 +47,26 @@ When you're done, submit the lab with `learn submit`.
 With all tests passing, you have successfully written multiple instance methods
 and _two_ different classes!
 
+With your solution, if you rub IRB and copy and paste your Dog class in, you
+should be able to write
+
+```rb
+dog = Dog.new
+
+dog.bark
+```
+
+and get a response:
+
+```text
+Woof!
+ => nil
+```
+
+What other class methods could you add? What sort of classes and instance
+methods could be useful? You can create all sorts of things with classes!
+
+
 #### Additional Note on Lab Testing
 
 In this lab, we asked that you code your two classes in separate `dog.rb` and
