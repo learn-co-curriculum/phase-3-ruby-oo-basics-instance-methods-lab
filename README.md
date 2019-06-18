@@ -13,30 +13,65 @@ You're going to be adding 2 instance methods to a `Dog` and `Person` class.
 
 Open this lab with `learn open` and run your tests with `learn`.
 
-#### 1. Define `Dog` in `lib/dog.rb`
+### 1. Define `Dog` in `lib/dog.rb`
 
 Open `lib/dog.rb` and add a class definition for a `Dog` class.
 
-#### 2. Define `#bark` in `Dog`
+### 2. Define `#bark` in `Dog`
 
 Add an instance method `#bark` to your `Dog` class in `lib/dog.rb` that will puts `"Woof!"`
 
-#### 3. Define `#sit` in `Dog`
+### 3. Define `#sit` in `Dog`
 
-Add an instance method `#sit` to your `Dog` class in `lib/dog.rb` that will puts `"The Dog is sitting"`.
+Add an instance method `#sit` to your `Dog` class in `lib/dog.rb` that will puts
+`"The Dog is sitting"`.
 
-#### 4. Define a `Person` in `lib/person.rb`
+### 4. Define a `Person` in `lib/person.rb`
 
 Open `lib/person.rb` and add a class definition for a `Person` class.
 
-#### 5. Define `#talk` in `Person`
+### 5. Define `#talk` in `Person`
 
-Add an instance method `#talk` to your `Person` class in `lib/person.rb` that will puts `"Hello World!"`
+Add an instance method `#talk` to your `Person` class in `lib/person.rb` that
+will puts `"Hello World!"`
 
-#### 6. Define `#walk` in `Person`
+### 6. Define `#walk` in `Person`
 
-Add an instance method `#walk` to your `Person` class in `lib/person.rb` that will puts `"The Person is walking"`.
+Add an instance method `#walk` to your `Person` class in `lib/person.rb` that
+will puts `"The Person is walking"`.
 
 When you're done, submit the lab with `learn submit`.
+
+## Conclusion
+
+With all tests passing, you have successfully written multiple instance methods
+and _two_ different classes!
+
+#### Additional Note on Lab Testing
+
+In this lab, we asked that you code your two classes in separate `dog.rb` and
+`person.rb` files. You could, in theory, code both classes in the same file, or
+even _code them in opposite files_ and still pass all tests. Why do you think that is?
+
+...
+
+...
+
+When the tests are run in this lab, RSpec loads both the `dog.rb` and
+`person.rb` files (this happens in the first to lines of `spec/spec_helper.rb`
+[using `require_relative`][]). As long as you place your classes in one of the
+files that RSpec loads, the tests will have access to them.
+
+[using `require_relative`]: https://apidock.com/ruby/Kernel/require_relative
+
+While it isn't enforced here, we do encourage you to separate classes into
+individual, accurately named files. Classes _encapsulate_ specific actions and
+information.
+
+For example, one class encapsulates information and actions about a _dog_.
+Another class encapsulates information about a _person_. In a larger
+application, you might not always need to load the `Dog` class when loading the
+`Person` class. As classes get larger, it also becomes easier to manage your
+code if you know each file contains _one_ class.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/instance-methods-lab-ruby' title='Instance Methods Lab Ruby'>Instance Methods Lab Ruby</a> on Learn.co and start learning to code for free.</p>
