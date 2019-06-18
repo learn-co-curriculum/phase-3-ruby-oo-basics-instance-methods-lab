@@ -1,13 +1,15 @@
 # Instance Methods Lab Ruby
 
-## Objectives
+## Learning Goals
 
-1. Define a class.
-2. Build instance methods for the class.
+- Define a class.
+- Build instance methods for the class.
 
 ## Overview
 
-You're going to be adding 2 instance methods to a `Dog` and `Person` class.
+In this lab, we will practice defining classes and building instance methods
+inside them. Specifically, you are going to be adding 2 instance methods to a
+`Dog` and `Person` class.
 
 ## Instructions
 
@@ -46,26 +48,6 @@ When you're done, submit the lab with `learn submit`.
 
 With all tests passing, you have successfully written multiple instance methods
 and _two_ different classes!
-
-With your solution, if you rub IRB and copy and paste your Dog class in, you
-should be able to write
-
-```rb
-dog = Dog.new
-
-dog.bark
-```
-
-and get a response:
-
-```text
-Woof!
- => nil
-```
-
-What other class methods could you add? What sort of classes and instance
-methods could be useful? You can create all sorts of things with classes!
-
 
 #### Additional Note on Lab Testing
 
