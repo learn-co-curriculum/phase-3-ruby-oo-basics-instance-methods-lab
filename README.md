@@ -49,7 +49,7 @@ When you're done, submit the lab with `learn submit`.
 With all tests passing, you have successfully written multiple instance methods
 and _two_ different classes!
 
-#### Additional Note on Lab Testing
+### Additional Note on Lab Testing
 
 In this lab, we asked that you code your two classes in separate `dog.rb` and
 `person.rb` files. You could, in theory, code both classes in the same file, or
@@ -66,14 +66,11 @@ files that RSpec loads, the tests will have access to them.
 
 [using `require_relative`]: https://apidock.com/ruby/Kernel/require_relative
 
-While it isn't enforced here, we do encourage you to separate classes into
-individual, accurately named files. Classes _encapsulate_ specific actions and
-information.
-
-For example, one class encapsulates information and actions about a _dog_.
-Another class encapsulates information about a _person_. In a larger
-application, you might not always need to load the `Dog` class when loading the
-`Person` class. As classes get larger, it also becomes easier to manage your
-code if you know each file contains _one_ class.
+While it isn't enforced, we do encourage you to separate classes into
+individual, accurately named files. In a larger application, you might not
+always need to load the `Dog` class when loading the `Person` class. As classes
+get larger, it also becomes easier to manage your code if you know each file
+contains _one_ class. Keeping to these conventions makes it easier in the future
+to go back and read code you've previously written. 
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/instance-methods-lab-ruby' title='Instance Methods Lab Ruby'>Instance Methods Lab Ruby</a> on Learn.co and start learning to code for free.</p>
