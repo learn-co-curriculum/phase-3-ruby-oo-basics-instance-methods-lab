@@ -13,7 +13,7 @@ inside them. Specifically, you are going to be adding 2 instance methods to a
 
 ## Instructions
 
-Open this lab with `learn open` and run your tests with `learn`.
+Open this lab clicking the "Fork" button and run your tests with `learn test`.
 
 ### 1. Define `Dog` in `lib/dog.rb`
 
