@@ -1,4 +1,4 @@
-# Instance Methods Lab Ruby
+# Instance Methods Lab
 
 ## Learning Goals
 
@@ -60,7 +60,7 @@ even _code them in opposite files_ and still pass all tests. Why do you think th
 ...
 
 When the tests are run in this lab, RSpec loads both the `dog.rb` and
-`person.rb` files (this happens in the first to lines of `spec/spec_helper.rb`
+`person.rb` files (this happens in the first two lines of `spec/spec_helper.rb`
 [using `require_relative`][]). As long as you place your classes in one of the
 files that RSpec loads, the tests will have access to them.
 
@@ -72,5 +72,3 @@ always need to load the `Dog` class when loading the `Person` class. As classes
 get larger, it also becomes easier to manage your code if you know each file
 contains _one_ class. Keeping to these conventions makes it easier in the future
 to go back and read code you've previously written. 
-
-
