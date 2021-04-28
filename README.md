@@ -61,10 +61,10 @@ even _code them in opposite files_ and still pass all tests. Why do you think th
 
 When the tests are run in this lab, RSpec loads both the `dog.rb` and
 `person.rb` files (this happens in the first two lines of `spec/spec_helper.rb`
-[using `require_relative`][]). As long as you place your classes in one of the
+using [`require_relative`][]). As long as you place your classes in one of the
 files that RSpec loads, the tests will have access to them.
 
-[using `require_relative`]: https://apidock.com/ruby/Kernel/require_relative
+[`require_relative`]: https://apidock.com/ruby/Kernel/require_relative
 
 While it isn't enforced, we do encourage you to separate classes into
 individual, accurately named files. In a larger application, you might not
