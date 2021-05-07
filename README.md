@@ -56,6 +56,14 @@ In dot notation, we call the object that received the method message the
 "Strings are instances and objects too".reverse
 ```
 
+**Note:** As in JavaScript, dot notation can be used both to call a method and
+to access an attribute of an object. (We'll talk about object attributes in Ruby
+in the next lesson.) Unlike JavaScript, however, Ruby does not require the `()`
+to be appended to a method's name when you call it. What this means is that the
+syntax for the two uses looks the same in Ruby. It is important to keep this in
+mind as you program in Ruby and stay aware of which you're doing in a particular
+case.
+
 ### Instance Methods
 
 All objects respond to methods and messages, like `#object_id` in the example
