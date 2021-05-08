@@ -1,4 +1,4 @@
-# Instance Methods Lab
+# Instance Methods
 
 ## Learning Goals
 
