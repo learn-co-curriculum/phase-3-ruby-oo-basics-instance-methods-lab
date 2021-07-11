@@ -35,11 +35,13 @@ fido = Dog.new #=> #<Dog:0x007fc52c2cc588>
 fido.object_id #=> 70173135795280
 ```
 
-In the example above, we send the `fido` instance a message `object_id` by
-separating the receiving object, `fido` and the message, `object_id` by a dot
-(`.`). When we send an object a message through dot notation, we are evoking the
-corresponding method on the object. We are calling the `object_id` method on
-`fido`. (Note: the `object_id` you get if you test out the above code will be
+In the example above, we send the `fido` instance a **message** `#object_id` by
+separating the receiving object, `fido` and the message, `#object_id` by a dot
+(`.`).
+
+When we send an object a message through dot notation, we are invoking the
+corresponding method on the object. We are calling the `#object_id` method on
+`fido`. (Note: the `#object_id` you get if you test out the above code will be
 different.)
 
 The `#object_id` method simply tells you the object's identifier in your
@@ -48,8 +50,8 @@ computer's memory (the place where all things live in your computer).
 > I thought of objects being like biological cells and/or individual computers
 > on a network, only able to communicate with messages. - Alan Kay
 
-In dot notation, we call the object that received the method message the
-"receiver" and we call the method the "message".
+In dot notation, we call the object that received the method the **receiver**,
+and we call the method the **message**.
 
 ```ruby
 # The receiver is this very string      # reverse is the message
@@ -71,13 +73,16 @@ What this means is that the syntax for accessing an attribute and calling a
 method can look the same in Ruby. It is important to keep this in mind as you
 program in Ruby and stay aware of which one you're doing in a particular case.
 
-### Instance Methods
+### Exploring Instance Methods
 
-All objects respond to methods and messages, like `#object_id` in the example
-above. One interesting method provided is the `#methods` method that returns an
-array of all the methods and messages an object responds to. We can evoke this
-method via dot-notation. One of the great things you can ask every object in
-Ruby is "What methods do you respond to?"
+All objects respond to methods (messages), like `#object_id` in the example
+above. One interesting method that is available on all objects in Ruby is the
+`#methods` method. Calling `#methods` on an object returns an array of all the
+methods (messages) an object responds to. We can invoke this method via
+dot-notation.
+
+One of the great things you can ask every object in Ruby is "What methods do you
+respond to?" To see for yourself, try this out in IRB:
 
 ```ruby
 class Dog
@@ -101,14 +106,12 @@ As you can see, out of the box, our objects can do a lot of things. Where these
 things come from and what they do are not so important right now because all of
 that functionality is very low level and not interesting to our Dogs.
 
-## Lab
+### Building Your Own Instance Methods
 
 If you haven't already, fork and clone this lab to your local environment and
 run `learn test`. Follow along below to get the first few tests for the `Dog`
 class to pass. Once you have those passing, you will complete the remaining
 tasks on your own.
-
-### Building Your Own Instance Methods
 
 How do we add our own methods to our classes? In our Dog example, can we teach
 our Dog a new trick? Can we teach our Dog to bark for example?
@@ -121,8 +124,11 @@ just call whenever we want.
 We call the methods defined within the object's class **Instance Methods**
 because they are methods that belong to any instance of the class.
 
-Let's create our `Dog` class in `lib/dog.rb` and define our `bark` instance
-method:
+Let's create our `Dog` class in `lib/dog.rb`. It's a convention among Rubyists
+to define each class in its own file, using the class name to determine the file
+name.
+
+In the `Dog` class, let's define our `#bark` instance method:
 
 ```ruby
 class Dog
@@ -189,7 +195,7 @@ fido.sit #=> NoMethodError: undefined method `sit' for #<Dog:0x007fa4e9a9e8a0>
 ```
 
 In the same manner, instance methods, the methods that belong to particular
-instances of particular classes, are not globally evocable like procedural
+instances of particular classes, cannot be used globally like procedural
 methods. They cannot be called without an instance.
 
 ```ruby
@@ -205,14 +211,7 @@ fido = Dog.new
 bark #=> NameError: undefined local variable or method `bark' for main:Object
 ```
 
-### Classes as Blueprints
-
-The ability to define methods and behaviors in our classes for our instances
-makes Ruby classes behave not just as factories, capable of instantiating new
-individual instances, but also as a blueprint, defining what those instances can
-do.
-
-### Instructions
+## Instructions
 
 Complete the following tasks to get the rests of the tests passing:
 
@@ -220,11 +219,6 @@ Complete the following tasks to get the rests of the tests passing:
 2. Define a `Person` class in `lib/person.rb`
 3. Add an instance method `#talk` to your Person class that will puts "Hello World!"
 4. Add an instance method `#walk` to your Person class that will puts "The Person is walking".
-
-## Conclusion
-
-With all tests passing, you have successfully written multiple instance methods
-and _two_ different classes!
 
 ### Additional Note on Lab Testing
 
@@ -250,3 +244,13 @@ always need to load the `Dog` class when loading the `Person` class. As classes
 get larger, it also becomes easier to manage your code if you know each file
 contains _one_ class. Keeping to these conventions makes it easier in the future
 to go back and read code you've previously written.
+
+## Conclusion
+
+With all tests passing, you have successfully written multiple instance methods
+and _two_ different classes!
+
+The ability to define methods and behaviors in our classes for our instances
+makes Ruby classes behave not just as factories, capable of instantiating new
+individual instances, but also as a blueprint, defining what those instances can
+do.
