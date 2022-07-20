@@ -21,7 +21,7 @@ ahead and use a typical git workflow to make it happen:
 
 A curriculum owner will review your change and approve or comment on it in due
 course.
-
+  
 # Why Contribute?
 
 Curriculum on Learn is publicly and freely available under Learn's
